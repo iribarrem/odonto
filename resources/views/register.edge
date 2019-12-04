@@ -1,0 +1,42 @@
+@layout('layouts.master')
+
+@section('content')
+    <h3>Cadastrar Usuário</h3><br><br>
+    <form role="form" method="POST" action="/users">
+        <label>Nome:</label>
+        <input id="name" name="name" type="text"><br>
+
+        <label>Sobrenome:</label>
+        <input id="last_name" name="last_name" type="text"><br>
+        
+        <label>Email:</label>
+        <input id="email" name="email" type="email"><br>
+
+        <label>Senha:</label>
+        <input id="password" type="password" name="password"><br>
+
+        <label>Data de Nascimento:</label>
+        <input id="birthday" type="birthday" name="text"><br>
+
+        <label>CPF:</label>
+        <input id="cpf" type="number" name="cpf"><br>
+
+        <label>RG:</label>
+        <input id="rg" type="number" name="rg"><br>
+
+        <label>Telefone:</label>
+        <input id="phone" type="number" name="phone"><br>
+
+        <label>Endereço:</label>
+        <input id="address" type="text" name="address"><br>
+
+        <label>Posição:</label>
+        <select id="position" name="position">
+            <option value="professor">Professor</option>
+            <option value="aluno">Aluno</option>
+            <option value="paciente">Paciente</option>
+        </select><br><br>
+
+        <input class="btn btn-success" type="submit" value="Cadastrar"><br>
+    </form>
+@endsection

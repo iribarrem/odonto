@@ -1,0 +1,27 @@
+@layout('layouts.master')
+
+@section('content')
+    <h3>Anamnese</h3><br>
+    <h5>{{ user.name + ' ' + user.last_name }}</h5>
+    <br>
+    <table class="table text-center">
+        <thead class="thead-light">
+            <th scope="col">Sexo</td>
+            <th scope="col">Raça</td>
+            <th scope="col">Naturalidade</td>
+            <th scope="col">Queixa</td>
+            <th scope="col">Antecedentes</td>
+            <th scope="col">Histórico</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ anamnese.sexo }}</td>
+                <td>{{ anamnese.raca }}</td>
+                <td>{{ anamnese.naturalidade }}</td>
+                <td>{{ anamnese.queixa }}</td>
+                <td>{{ anamnese.antecedentes }}</td>
+                <td>{{ anamnese.historia }}</td>
+            </tr>
+        </tbody>
+    </table>
+@endsection

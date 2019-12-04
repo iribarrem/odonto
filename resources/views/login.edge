@@ -1,0 +1,12 @@
+@layout('layouts.master')
+
+@section('content')
+    <h2>Faça seu login abaixo</h2><br>
+    <form role="form" method="POST" action="/login">
+    <label>E-mail:</label></br>
+    <input id="email" type="email" name="email"></br>
+    <label>Senha:</label></br>
+    <input id="password" type="password" name="password"></br></br>
+    <input class="btn btn-success" type="submit" value="Entrar"></br>
+    </form>
+@endsection
